@@ -91,13 +91,13 @@ export default function Home() {
               <p className="text-xl text-lime-800">generating your image...</p>
             </div>
           ) : (
-            <div className="box flex justify-center items-center rounded-xl">
+            <div className="flex justify-center items-center rounded-xl w-full">
               <Image
                 src={image}
-                width={350}
+               width={350}
                 height={350}
                 alt="Generated Image"
-                className="rounded-lg border border-gray-400"
+                className="rounded-lg border border-gray-400 object-contain "
               />
             </div>
           )}
