@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       {signin === false ? (
-        <div className="flex justify-center items-center text-black flex-col w-5/12 h bg-slate-300 rounded-lg">
+        <div className="flex justify-center items-center text-black flex-col md:w-10/12 w-6/12 h bg-slate-300 rounded-lg">
           <h1 className="text-5xl md:text-3xl">Hello {user}</h1>
           <form
             className="flex flex-col justify-center items-center"
