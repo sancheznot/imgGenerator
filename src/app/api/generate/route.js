@@ -10,6 +10,10 @@ const openai = new OpenAIApi(configuration);
 export async function POST(Request) {
   const body = await Request.json();
 
+  if(body.prompt === ""){
+    return
+  }
+
   const responseOpenai = await openai.createImage({
     prompt: body.prompt,
     n: 1,
