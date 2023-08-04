@@ -66,11 +66,12 @@ export default function Home() {
               className="border border-black p-3 rounded-lg m-3 md:w-50 md:text-xl md:p-1"
               placeholder="Write something"
             />
+            <label className="text-lg text-red-500">(exmple: cat doing sport)</label>
             {loading ? (
               <button
                 disabled
                 type="submit"
-                className="bg-red-400 p-2 mb-3 rounded-lg text-2xl w-60 md:w-20 md:text-xl md:p-1 opacity-40">
+                className="bg-red-400 p-2 mb-3 rounded-lg text-2xl w-60 md:w-32 md:text-xl md:p-1 opacity-40">
                 Generating...
               </button>
             ) : (
@@ -83,7 +84,7 @@ export default function Home() {
           </form>
           {image === "" && loading === false ? (
             <div className="box flex justify-center items-center">
-              <p className="text-xl text-lime-800">Let&apos;s try, I&apos;m waiting for you</p>
+              <p className="text-xl text-lime-800">Let&apos;s try, I&apos;m waiting for your.<br></br>What Image do you want?</p>
             </div>
           ) : loading ? (
             <div className="box flex justify-center items-center">
