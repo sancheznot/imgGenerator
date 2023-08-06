@@ -22,3 +22,5 @@ export async function POST(Request) {
   const image_url = responseOpenai.data.data[0].url;
   return response.json({ url: image_url });
 }
+
+// export const dynamic = "force-static";
